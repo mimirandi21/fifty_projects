@@ -9,14 +9,15 @@
 		<title>Animal Adoption</title>
 	</head>
 	<body>
-		<select name="animal" onchange="this.changeAnimal">
+		<select name="animal" onchange="changeAnimal(this.value)">
 			<option value="" selected>Select an animal</option>
 			<option value="cat">Cats</option>
 			<option value="dog">Dogs</option>
 		</select>
-		<div class="container">
+
+		<div class="container cat">
 			<div
-				class="panel cat active"
+				class="panel active"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1613685396238-852abd2b6d36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1233&q=80');
 				"
@@ -24,7 +25,7 @@
 				<h3>Isobel</h3>
 			</div>
 			<div
-				class="panel cat"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1488740304459-45c4277e7daf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
 				"
@@ -32,7 +33,7 @@
 				<h3>Maya</h3>
 			</div>
 			<div
-				class="panel cat"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1548366086-7f1b76106622?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1224&q=80');
 				"
@@ -40,7 +41,7 @@
 				<h3>Seraphina</h3>
 			</div>
 			<div
-				class="panel cat"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1518288774672-b94e808873ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1278&q=80');
 				"
@@ -48,15 +49,17 @@
 				<h3>Kitzie</h3>
 			</div>
 			<div
-				class="panel cat"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1258&q=80');
 				"
 			>
 				<h3>Buttons</h3>
 			</div>
+		</div>
+		<div class="container dog">
 			<div
-				class="panel dog active"
+				class="panel active"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1558947530-cbcf6e9aeeae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80');
 				"
@@ -64,7 +67,7 @@
 				<h3>Brodie</h3>
 			</div>
 			<div
-				class="panel dog"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1568572933382-74d440642117?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80');
 				"
@@ -72,7 +75,7 @@
 				<h3>Shasta</h3>
 			</div>
 			<div
-				class="panel dog"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1612979148245-d8c79c50935d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80');
 				"
@@ -80,7 +83,7 @@
 				<h3>Ace</h3>
 			</div>
 			<div
-				class="panel dog"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80');
 				"
@@ -88,7 +91,7 @@
 				<h3>Buster</h3>
 			</div>
 			<div
-				class="panel dog"
+				class="panel"
 				style="
 					background-image: url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1239&q=80');
 				"
