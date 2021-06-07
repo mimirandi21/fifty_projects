@@ -14,7 +14,8 @@ body {
 	height: 100vh;
 }
 
-.container {
+.cat,
+.dog {
 	display: none;
 	width: 90vw;
 }
