@@ -47,8 +47,21 @@ body {
 	flex: 5;
 }
 
+.panel p {
+	opacity: 0;
+}
+
+.panel.active p {
+	position: absolute;
+	opacity: 1;
+	color: black;
+	bottom: -70px;
+	left: 20px;
+}
+
 .panel.active h3 {
 	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
