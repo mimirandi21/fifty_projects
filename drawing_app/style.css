@@ -5,6 +5,7 @@
 }
 
 body {
+	background-color: hsl(0, 3%, 94%);
 	font-family: "Sarabun", sans-serif;
 	display: flex;
 	margin: 0;
@@ -13,4 +14,34 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+}
+
+canvas {
+	border: 2px solid hsl(132, 14%, 20%);
+}
+
+.toolbox {
+	background-color: hsl(132, 14%, 50%);
+	border: 1px solid hsl(132, 14%, 20%);
+	display: flex;
+	width: 804px;
+	padding: 1rem;
+}
+
+.toolbox > * {
+	background-color: #fff;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	height: 50px;
+	width: 50px;
+	margin: 0.25rem;
+	padding: 0.25rem;
+	cursor: pointer;
+}
+
+.toolbox > *:last-child {
+	margin-left: auto;
 }
