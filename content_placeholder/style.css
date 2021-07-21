@@ -74,3 +74,33 @@ img {
 	color: #aaa;
 	margin-top: 5px;
 }
+
+.animated-bg {
+	background-image: linear-gradient(
+		to right,
+		hsl(0, 0%, 86%) 0%,
+		hsl(0, 0%, 89%) 10%,
+		hsl(0, 0%, 92%) 20%,
+		hsl(0, 0%, 95%) 100%
+	);
+	background-size: 200% 100%;
+	animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+	border-radius: 50px;
+	display: inline-block;
+	margin: 0;
+	height: 10px;
+	width: 100%;
+}
+
+@keyframes bgPos {
+	0% {
+		background-position: 50% 0;
+	}
+
+	100% {
+		background-position: -150% 0;
+	}
+}
