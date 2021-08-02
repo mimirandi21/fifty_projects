@@ -18,11 +18,12 @@ const messages = [
 	"Message Four",
 ];
 
-button.addEventListener("click", () => createNotification());
+button.addEventListener("click", () => createNotification(null, "failure"));
 
-function createNotification(message = null) {
+function createNotification(message = null, type = null) {
 	const notif = document.createElement("div");
 	notif.classList.add("toast");
+	notif.classList.add(type ? type : "info");
 	notif.innerText = message ? message : getRandomMessage();
 
 	toasts.appendChild(notif);
