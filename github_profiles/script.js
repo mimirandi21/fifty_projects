@@ -3,19 +3,11 @@ const form = document.getElementById("form");
 const search = document.getElementById("search");
 const main = document.getElementById("main");
 
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
-	const user = search.nodeValue;
-
-	if (user) {
-		getUser(user);
-		search.value = "";
-	}
-});
-
 async function getUser(username) {
 	try {
 		const { data } = await axios(APIURL + username);
+		console.log(data);
+		createUserCard(data);
 	} catch (err) {
 		if (err.response.status == 404) {
 			createErrorCard("No profile found");
@@ -69,3 +61,12 @@ function createErrorCard(msg) {
 
 	main.innerHTML = cardHTML;
 }
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	const user = search.value;
+
+	if (user) {
+		getUser(user);
+		search.value = "";
+	}
+});
